@@ -100,8 +100,4 @@ console.log(query_item1.hasAttribute("class"));
 
 // 10. removeAttribute() : loại bỏ 1 thuộc tính khỏi 1 phần tử HTML
 query_item1.removeAttribute("class");
-<<<<<<< HEAD
 console.log(query_item1);
-=======
-console.log(query_item1);
->>>>>>> 5d4508450850e95c2b85a464bc2db02c905e1941
