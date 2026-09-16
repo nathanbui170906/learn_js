@@ -149,3 +149,33 @@ let result3 = numbers.filter(
     }
 );
 console.log(result3);
+
+// 22. map
+/*
+    - Đc dùng để tạo mảng mới từ mảng ban đầu bằng cách áp dụng 1 hàm (callback) cho mỗi phần tử của mảng đó, giúp chuyển đổi xử lý dữ liệu mà k làm thay đổi mảng gốc
+    - Cú pháp:
+        let newArray = arr.map((curVal, idx, arr) => {
+            return giá_trị;
+        },thisArg);
+    - Trong đó:
+        + curVal : giá trị của phần tử hiện tại
+        + idx : vị trí của phần tử hiện tại (tùy chọn)
+        + arr : mảng gốc (tùy chọn)
+        + thisArg : giá trị dùng làm this khi gọi callback (tùy chọn)
+    - Nếu có tham số thisArg thì k nên viết arrow function
+*/
+// Chuyển mảng gốc thành mảng nhân đôi giá trị
+const intNums = [2,4,6,8];
+const doubled = intNums.map((number) => {
+    return number * 2;
+});
+console.log(doubled);
+
+// Chuyển mảng đối tượng thành mảng chỉ chứa 1 kiểu DL
+const users = [
+    {id: 1, name: "Nathan", birth: 2006},
+    {id: 2, name: "Nhat", birth: 2005},
+    {id: 3, name: "Win", birth: 2004}
+];
+const names = users.map((user) => user.name);
+console.log(names);
